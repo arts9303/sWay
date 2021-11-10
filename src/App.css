@@ -12,19 +12,8 @@
   margin-left: auto;
   margin-right: auto;
 }
-.header{
-  grid-area: header;
-  padding: 10px;
-  background: rgb(67, 177, 67);
-}
-.header img {
-  max-width: 50px;
-}
-.sidebar{
-  grid-area: sidebar;
-  padding: 10px;
-  background: rgb(67, 177, 67);
-}
+
+
 
 .content {
   grid-area: content;
@@ -35,15 +24,7 @@ img {
   height: auto;
 }
 
-.sidebar a {
-  color: #fff;
-  text-decoration: none;
-  margin-bottom: 5px;
-  display: block;
-}
-.sidebar a.last {
-  margin-top: 20px;
-}
+
 .content__author {
   display: flex;
   align-items: flex-start;
