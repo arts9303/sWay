@@ -1,0 +1,15 @@
+.post__item {
+    display: flex;
+}
+.post__item {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.post__item__avatar {
+    margin-right: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 500px;
+    background: rgb(31, 171, 226);
+}

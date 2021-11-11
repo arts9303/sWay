@@ -1,0 +1,14 @@
+.sidebar{
+    grid-area: sidebar;
+    padding: 10px;
+    background: rgb(67, 177, 67);
+}
+.sidebar  div {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: block;
+}
+.sidebar  div.last {
+    margin-top: 20px;
+}

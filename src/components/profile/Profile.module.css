@@ -1,0 +1,41 @@
+.content__author {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.content__author > img {
+    margin-right: 20px;
+    max-width: 120px;
+}
+.author__name {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.author__item {
+    font-size: 18px;
+}
+.post {
+    margin-top: 20px;
+}
+.post__title {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.post__textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 10px;
+    background: rgb(236, 236, 236);
+    max-width: 920px;
+}
+.post__btn {
+    margin-left: auto;
+    background: rgb(67, 177, 67);
+    color: #fff;
+    margin-top: 10px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    display: block;
+}
+.author {}
