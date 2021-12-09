@@ -2,6 +2,7 @@
     grid-area: sidebar;
     padding: 10px;
     background: rgb(67, 177, 67);
+    height: 100vh;
 }
 .sidebar  div {
     color: #fff;
@@ -11,4 +12,14 @@
 }
 .sidebar  div.last {
     margin-top: 20px;
+}
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+.sidebar a.active {
+    color: gold;
+}
+.sidebarLink {
+
 }

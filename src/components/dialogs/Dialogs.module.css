@@ -1,0 +1,41 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 3fr 8fr;
+}
+
+.dialogs__names {
+    padding: 10px;
+    border-right: 1px solid #999;
+}
+
+.dialogs__messages {
+    padding: 10px 10px 10px 50px;
+}
+
+.dialogs__item {
+    margin-bottom: 20px;
+    cursor: pointer
+}
+
+.dialogs__item.active {
+    font-weight: bold;
+}
+
+.dialogs__message_self {
+    padding: 13px 20px;
+    border-radius: 37px;
+    background: #dedede;
+    margin-bottom: 10px;
+    width: fit-content;
+    max-width: 90%;
+}
+
+.dialogs__message_friend {
+    padding: 13px 20px;
+    border-radius: 37px;
+    background: #dedede;
+    margin-left: auto;
+    margin-bottom: 10px;
+    width: fit-content;
+    max-width: 90%;
+}
