@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5e3eb8d-4978-421b-a9da-f7d4a9d0d7a6" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/components/dialogs/Dialogs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dialogs/Dialogs.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/profile/post/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/post/Post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidebar/Sidebar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/Sidebar.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +78,7 @@
       <workItem from="1638130094194" duration="8455000" />
       <workItem from="1638391847594" duration="837000" />
       <workItem from="1638397879036" duration="11564000" />
+      <workItem from="1639023725438" duration="2300000" />
     </task>
     <servers />
   </component>
