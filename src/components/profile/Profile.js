@@ -2,14 +2,10 @@ import React from 'react';
 import Post from './post/Post';
 import s from './Profile.module.css'
 
-const Profile = () => {
+const Profile = (props) => {
 
-    let postData = [
-        {message: 'Hey good job!', likes: 5},
-        {message: 'Tony, what about dinner today', likes: 1}
-    ]
 
-    let postList = postData.map( e => <Post message={e.message} likes={e.likes}/> )
+    let postList = props.posts.map( e => <Post message={e.message} likes={e.likes}/> )
 
     return (
         <div>
