@@ -39,3 +39,11 @@
     width: fit-content;
     max-width: 90%;
 }
+.dialogs__textarea {
+    display: block;
+    width: 100%;
+    margin-top: 35px;
+    max-width: 350px;
+    margin-bottom: 10px;
+    height: 250px;
+}

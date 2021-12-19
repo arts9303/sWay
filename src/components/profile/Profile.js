@@ -1,11 +1,23 @@
 import React from 'react';
 import Post from './post/Post';
-import s from './Profile.module.css'
+import s from './Profile.module.css';
 
 const Profile = (props) => {
 
+    let postList = props.state.posts.map(e => <Post message={e.message} likes={e.likes}/>)
 
-    let postList = props.posts.map( e => <Post message={e.message} likes={e.likes}/> )
+    let addPost = () => {
+        let text = newPost.current.value;
+        props.addPost(text);
+
+    }
+
+    let sendTextToState = () => {
+        let text = newPost.current.value;
+        props.sendTextToState(text);
+    }
+
+    let newPost = React.createRef();
 
     return (
         <div>
@@ -25,10 +37,10 @@ const Profile = (props) => {
             </div>
             <div className={s.post}>
                 <div className={s.post__title}>My Posts</div>
-                <textarea className={s.post__textarea} name="" id=""></textarea>
-                <button className={s.post__btn}>send</button>
+                <textarea onChange={sendTextToState} value={props.state.text} className={s.post__textarea} ref={newPost}/>
+                <button onClick={addPost} className={s.post__btn}>send</button>
                 <div className="post__content">
-                    { postList }
+                    {postList}
                 </div>
             </div>
         </div>

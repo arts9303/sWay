@@ -5,17 +5,24 @@ import DialogsMessage from "./DialogsMessage"
 
 const Dialogs = (props) => {
 
-    let usersNames = props.users.map( e => <DialogsItem id={e.id} name={e.name}/> )
-    let usersMessages = props.messages.map( e => <DialogsMessage message={e.message} />)
+    let usersNames = props.state.users.map(e => <DialogsItem id={e.id} name={e.name}/>)
+    let usersMessages = props.state.messages.map(e => <DialogsMessage message={e.message}/>)
+    let newMessage = React.createRef();
+    let sendMessage = () => {
+        let text = newMessage.current.value;
+        alert( text );
+    }
 
     return (
         <div className={s.dialogs}>
             <div className={s.dialogs__names}>
-                { usersNames }
+                {usersNames}
             </div>
             <div className={s.dialogs__messages}>
-                { usersMessages }
+                {usersMessages}
                 {/*<div className={s.dialogs__message_friend}>Hello my old friend</div> */}
+                <textarea className={s.dialogs__textarea} ref={newMessage}></textarea>
+                <button onClick={sendMessage}>Send</button>
             </div>
         </div>
     );
