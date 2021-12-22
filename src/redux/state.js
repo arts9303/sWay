@@ -1,5 +1,4 @@
-import {render} from './../render';
-
+let ReRender = () => {};
 
 let state = {
 
@@ -41,12 +40,16 @@ export let addPost = (postMessage) => {
 
     state.profilePage.posts.push(newPost);
     state.profilePage.text = '';
-    render(state);
+    ReRender(state);
 };
 
 export let sendTextToState = (text) => {
     state.profilePage.text = text;
-    render(state);
+    ReRender(state);
+}
+
+export const subscriber = (observer) => {
+    ReRender = observer;
 }
 
 export default state;
