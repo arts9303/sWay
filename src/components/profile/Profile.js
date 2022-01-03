@@ -8,13 +8,13 @@ const Profile = (props) => {
 
     let addPost = () => {
         let text = newPost.current.value;
-        props.addPost(text);
+        props.dispatch({type: 'ADD-POST', postMessage: text});
 
     }
 
     let sendTextToState = () => {
         let text = newPost.current.value;
-        props.sendTextToState(text);
+        props.dispatch({type: 'SEND-TEXT-TO-STATE', valueText: text});
     }
 
     let newPost = React.createRef();
