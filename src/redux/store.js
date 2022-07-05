@@ -23,7 +23,8 @@ let store = {
                     {id: 2, message: 'Hello my old friend'},
                     {id: 2, message: 'Hello my old friend'},
                     {id: 2, message: 'Hello my old friend'}
-                ]
+                ],
+                DialogText: ''
             }
 
         },
@@ -41,9 +42,20 @@ let store = {
                     message: action.postMessage,
                     likes: 0
                 }
-
                 this._state.profilePage.posts.push(newPost);
                 this._state.profilePage.text = '';
+                this.ReRender(this._state);
+            } else if (action.type === 'TYPING-MESSAGE-IN-DIALOG') {
+                this._state.dialogsPage.DialogText = action.Messagetext;
+                this.ReRender(this._state);
+            }
+            else if (action.type === 'NEW-MESSAGE-SEND') {
+                let newMessage = {
+                    id: 3,
+                    message: action.message
+                }
+                this._state.dialogsPage.messages.push(newMessage);
+                this._state.dialogsPage.DialogText = '';
                 this.ReRender(this._state);
             }
         },

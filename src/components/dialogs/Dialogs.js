@@ -10,7 +10,12 @@ const Dialogs = (props) => {
     let newMessage = React.createRef();
     let sendMessage = () => {
         let text = newMessage.current.value;
-        alert( text );
+        props.dispatch({type: 'NEW-MESSAGE-SEND',message: text})
+    }
+
+    let sendDialogMessageTyping = (e) => {
+        let text = e.target.value;
+        props.dispatch({type: 'TYPING-MESSAGE-IN-DIALOG', Messagetext: text});
     }
 
     return (
@@ -20,8 +25,7 @@ const Dialogs = (props) => {
             </div>
             <div className={s.dialogs__messages}>
                 {usersMessages}
-                {/*<div className={s.dialogs__message_friend}>Hello my old friend</div> */}
-                <textarea className={s.dialogs__textarea} ref={newMessage}></textarea>
+                <textarea value={props.state.DialogText} onChange={sendDialogMessageTyping} className={s.dialogs__textarea} placeholder="Напишите ваше сообщение..." ref={newMessage}></textarea>
                 <button onClick={sendMessage}>Send</button>
             </div>
         </div>
